@@ -14,9 +14,7 @@ def echo():
 @app.route('/status/<int:code>', methods=['GET'])
 def status_code(code):
     return ("", code)
-@app.route('/pinging', methods=['GET'])
-def broken_ping():
-    return jsonify({"message": "pong"}), 500 
+
 
 
 if __name__ == '__main__':
